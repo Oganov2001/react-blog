@@ -1,0 +1,12 @@
+nav {
+    background-color: #4f4;
+    text-align: center;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+}
