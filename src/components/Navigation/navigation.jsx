@@ -1,22 +1,33 @@
+import { useState } from 'react';
 import './navigation.css';
 
 const Navigation = () => {
-    return (
-        <nav>
-            <h2>Menu</h2>
+    const [ isOpen, setIsOpen ] = useState(false);
 
-            <ul>
-                <li>
-                    <button>Home</button>
-                </li>
-                <li>
-                    <button>About</button>
-                </li>
-                <li>
-                    <button>Contact</button>
-                </li>
-            </ul>
-        </nav>
+    const toggleNavigation = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="nav-menu">
+            <button className='nav-button' onClick={toggleNavigation}>Menu</button>
+
+            <nav style={{ display: isOpen ? 'block' : 'none' }}>
+                <h2>Menu</h2>
+
+                <ul>
+                    <li>
+                        <a href='#'>Home</a>
+                    </li>
+                    <li>
+                        <a href='#'>About</a>
+                    </li>
+                    <li>
+                        <a href='#'>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     );
 };
 
