@@ -1,5 +1,3 @@
-import './post.css';
-
 const Post = (props) => {
     return (
         <article className='post'>

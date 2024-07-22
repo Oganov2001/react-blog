@@ -1,5 +1,3 @@
-import './subscription.css';
-
 const Subscription = () => {
     return (
         <form className="subscribe-form">

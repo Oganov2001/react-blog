@@ -2,3 +2,91 @@
     margin: 0;
     padding: 0;
 }
+
+/* Navigation Menu */
+
+nav {
+    background-color: #4f4;
+    text-align: center;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+.nav-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+header p {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+/* Subscription Form */
+
+.subscribe-form {
+    border-radius: 3rem;
+    margin: auto;
+    width: 60%;
+    height: 2rem;
+}
+
+.subscribe-form input {
+    padding-left: 1rem;
+    background-color: #eee;
+    border-style: none;
+    border-radius: 1rem 0 0 1rem;
+    width: 60%;
+    height: 100%;
+}
+
+.subscribe-form button {
+    color: white;
+    background-color: seagreen;
+    border-style: none;
+    border-radius: 0 1rem 1rem 0;
+    width: 25%;
+    height: 100%;
+}
+
+/* Posts List */
+
+.posts-list li {
+    text-align: center;
+}
+
+/* Post */
+
+.post {
+    text-align: left;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ddd;
+    border-radius: 0.5rem;
+    width: 75%;
+}
+
+.post p {
+    padding-left: 1rem;
+}
